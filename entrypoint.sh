@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 
-# First, start PHP-FPM
-docker-php-entrypoint php-fpm &
+# Start PHP-FPM
+php-fpm &
 
-# Then start Nginx
+# Start Nginx
 nginx -g "daemon off;"
